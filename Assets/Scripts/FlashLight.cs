@@ -10,6 +10,11 @@ public class FlashLight : MonoBehaviour
     private float weakLightMinRange = 4f;  // Range mínimo da luz fraca
     private float weakLightMaxRange = 6f;  // Range máximo da luz fraca
 
+    [Header("Áudio da Lanterna")]
+    public AudioSource audioSource;
+    public AudioClip soundOn;
+    public AudioClip soundOff;
+
     private bool flashlightOn = false;
 
     void Start()
@@ -26,11 +31,19 @@ public class FlashLight : MonoBehaviour
         {
             flashlightOn = !flashlightOn;
             flashlight.enabled = flashlightOn;
+
+            // Toca o som de ligar ou desligar
+            if (audioSource != null)
+            {
+                if (flashlightOn && soundOn != null)
+                    audioSource.PlayOneShot(soundOn);
+                else if (!flashlightOn && soundOff != null)
+                    audioSource.PlayOneShot(soundOff);
+            }
         }
 
         // Faz o fade do range da luz fraca
         float targetRange = flashlightOn ? weakLightMinRange : weakLightMaxRange;
         weakLight.range = Mathf.Lerp(weakLight.range, targetRange, Time.deltaTime * fadeSpeed);
     }
-
 }
