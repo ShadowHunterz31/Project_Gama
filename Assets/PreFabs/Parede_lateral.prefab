@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2005815234004738525}
   - component: {fileID: 6351026370729711903}
   - component: {fileID: 7580802327338097407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Parede_lateral
   m_TagString: Untagged
   m_Icon: {fileID: 0}

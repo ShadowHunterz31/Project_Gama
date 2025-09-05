@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3263622065535449780}
   - component: {fileID: 7169490694365369734}
   - component: {fileID: 8257437163488449508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Parede_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
