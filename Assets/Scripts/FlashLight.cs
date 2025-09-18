@@ -7,7 +7,7 @@ public class FlashLight : MonoBehaviour
     public Light flashlight;      // A lanterna (Spot Light)
     public Light weakLight;       // A luz fraca do player
     public float fadeSpeed = 4f;  // Velocidade do fade
-    private float weakLightMinRange = 4f;  // Range mínimo da luz fraca
+    private float weakLightMinRange = 2f;  // Range mínimo da luz fraca
     private float weakLightMaxRange = 6f;  // Range máximo da luz fraca
 
     [Header("Áudio da Lanterna")]
