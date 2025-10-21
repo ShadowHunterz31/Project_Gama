@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8329606041731411959}
   - component: {fileID: 7331734579841590526}
   - component: {fileID: 7236693090664598507}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: chao_provisorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2510552898669124739}
   - component: {fileID: 2667528592236423473}
   - component: {fileID: 38552787486709528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: teto_provisorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
